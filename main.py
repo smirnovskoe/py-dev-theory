@@ -1,26 +1,7 @@
-from abc import ABC, abstractmethod
+x = [_ for _ in range(10)]
 
+z, *y = ( 'a' for _ in range(10))
 
-class A(ABC):
-
-    @abstractmethod
-    def a_method(self): pass
-
-
-class Mix(ABC):
-
-    @abstractmethod
-    def my_mix(self): pass
-
-
-class B(A, Mix):
-
-    def a_method(self): pass
-
-    def my_mix(self): pass
-
-
-print(B.mro())
-
+print(type(z), y)
 
 
